@@ -1,6 +1,6 @@
 # SteelSeries Sonar DeviceManager Profiles
 
-Many Thanks to [Change the audio source of SteelSeries GG Sonar with a script](https://blog.thedewa.com/posts/automate-steelseries-sonar/ for providing the required informations.) 
+Many Thanks to [Change the audio source of SteelSeries GG Sonar with a script](https://blog.thedewa.com/posts/automate-steelseries-sonar/) for providing the required informations.
 
 # Why?
 In the application SteelSeries Sonar is it Possible to map input/output devices to the Sonar audio devices.
