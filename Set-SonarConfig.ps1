@@ -1,7 +1,8 @@
 param($configfile)
 
 $start = Get-Date
-$Url = (Invoke-RestMethod -Uri https://localhost:6327/subApps).subApps.sonar.metadata.webServerAddress
+$APIconnection = Get-NetTCPConnection | Where-Object {$_.State -eq "LISTEN" -and $_.OwningProcess -eq (Get-Process -Name SteelSeriesSonar).Id}
+$Url = "http://$($APIconnection.LocalAddress):$($APIconnection.LocalPort)"
 $end = Get-Date
 ($end - $start).Milliseconds
 Write-Host $Url
